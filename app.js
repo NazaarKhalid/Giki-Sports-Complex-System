@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const userIsCoach = false; 
 
     // --- INJECT DRAWERS (MENU & PROFILE) ---
-    // This allows the "background home" to remain visible when menus open
     function injectDrawers() {
         const drawersHTML = `
             <div id="menuBackdrop" class="overlay-backdrop"></div>
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.insertAdjacentHTML('beforeend', drawersHTML);
     }
 
-    // Call injection only if not on signin/welcome
     if (!currentPage.includes('signin.html') && !currentPage.includes('welcome.html')) {
         injectDrawers();
     }
@@ -67,16 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if(profileDrawer) profileDrawer.classList.remove('active');
     }
 
-    // 1. Open Hamburger Menu
     document.querySelectorAll('#openMenu').forEach(button => {
         button.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent immediate closing
+            e.stopPropagation();
             if(backdrop) backdrop.classList.add('active');
             if(menuDrawer) menuDrawer.classList.add('active');
         });
     });
 
-    // 2. Open Profile Panel (Top Right Icon)
     document.querySelectorAll('.user-profile').forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -85,11 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 3. Close Buttons
     document.getElementById('closeMenuDrawer')?.addEventListener('click', closeAllDrawers);
     document.getElementById('closeProfileDrawer')?.addEventListener('click', closeAllDrawers);
     
-    // 4. Click Backdrop to Close
     if(backdrop) {
         backdrop.addEventListener('click', closeAllDrawers);
     }

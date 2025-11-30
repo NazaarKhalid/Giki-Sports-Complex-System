@@ -84,7 +84,7 @@ body {
     align-items: center;
     font-weight: bold;
     font-size: 1rem;
-    cursor: pointer; /* Added cursor pointer */
+    cursor: pointer;
 }
 
 .bottom-nav {
@@ -282,6 +282,7 @@ body {
     line-height: 1.5;
 }
 
+/* --- OVERLAY & DRAWER STYLES --- */
 
 .overlay-backdrop {
     position: fixed;
