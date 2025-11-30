@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIKI Pulse - Announcements</title>
+    <title>GIKI Pulse - Inbox</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="announcements.css">
 </head>
 <body>
     <div class="top-bar">
         <button class="menu-btn" id="openMenu">☰</button>
-        <h2 class="app-name">GIKI Pulse</h2>
+        <h2 class="app-name">Inbox</h2>
         <div class="user-profile">S</div>
     </div>
     
-    <main class="content-area centered-content">
-        <div class="card announcements-card">
+    <main class="content-area">
+        <div class="announcements-card">
             <ul class="announcement-list">
+                <!-- Unread Item 1 -->
                 <li class="announcement-item unread">
-                    <span class="dot"></span>
-                    <span class="text">Football Field closed for maintenance.</span>
-                    <span class="time">10 min ago</span>
+                    <div class="icon-placeholder">⚠️</div>
+                    <div class="announcement-content">
+                        <span class="text">Football Field closed for maintenance until further notice.</span>
+                        <span class="time">10 min ago</span>
+                    </div>
                 </li>
-                <li class="announcement-item">
-                    <span class="dot"></span>
-                    <span class="text">New squash court slots available!</span>
-                    <span class="time">1 hr ago</span>
+                
+                <!-- Unread Item 2 -->
+                <li class="announcement-item unread">
+                    <div class="icon-placeholder">🎾</div>
+                    <div class="announcement-content">
+                        <span class="text">New squash court slots available for next week!</span>
+                        <span class="time">1 hr ago</span>
+                    </div>
                 </li>
+
+                <!-- Read Item -->
                 <li class="announcement-item">
-                    <span class="dot"></span>
-                    <span class="text">Gym membership renewal reminder.</span>
-                    <span class="time">Yesterday</span>
+                    <div class="icon-placeholder">💪</div>
+                    <div class="announcement-content">
+                        <span class="text">Gym membership renewal reminder. Due in 3 days.</span>
+                        <span class="time">Yesterday</span>
+                    </div>
                 </li>
+
+                <!-- Read Item -->
                 <li class="announcement-item">
-                    <span class="dot"></span>
-                    <span class="text">Team tryouts schedule updated.</span>
-                    <span class="time">1 day ago</span>
+                    <div class="icon-placeholder">📅</div>
+                    <div class="announcement-content">
+                        <span class="text">Team tryouts schedule updated. Check Events tab.</span>
+                        <span class="time">1 day ago</span>
+                    </div>
                 </li>
             </ul>
         </div>
 
         <div class="action-buttons">
-            <button class="btn-action secondary-action" id="openNotificationBtn">Open</button>
-            <button class="btn-action secondary-action" id="clearNotificationBtn">Clear</button>
+            <button class="btn-action" id="openNotificationBtn">Mark all read</button>
+            <div style="width: 1px; background: #ddd; margin: 5px 0;"></div>
+            <button class="btn-action" id="clearNotificationBtn">Clear all</button>
         </div>
     </main>
 
@@ -50,7 +66,8 @@
         <button class="nav-item"><span class="icon">🏠</span>Home</button>
         <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
         <button class="nav-item"><span class="icon">🏆</span>Events</button>
-        <button class="nav-item active"><span class="icon">🔔</span>Announcements</button>
+        <button class="nav-item active"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
     </nav>
     <script src="app.js"></script>
 </body>

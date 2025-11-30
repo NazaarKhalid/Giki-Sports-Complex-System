@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIKI Pulse - Events & Trials</title>
+    <title>GIKI Pulse - Events</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="events.css">
 </head>
 <body>
     <div class="top-bar">
-        <button class="menu-btn back-btn" id="backBtn">←</button>
-        <h2 class="app-name">GIKI Pulse</h2>
+        <button class="menu-btn" id="openMenu">☰</button>
+        <h2 class="app-name">Events</h2>
         <div class="user-profile">S</div>
     </div>
     
@@ -20,7 +20,7 @@
             <div class="card trial-card">
                 <h2 class="trial-title">Football Trials</h2>
                 <div class="trial-details">
-                    <img src="placeholder-profile.jpg" alt="Coach Profile" class="coach-photo">
+                    <div class="coach-photo" style="background: #ccc;"></div>
                     <div class="info">
                         <p class="date">10 Sept</p>
                         <p class="time-place">5:00 PM - 6:00 PM</p>
@@ -33,7 +33,7 @@
             <div class="card trial-card">
                 <h2 class="trial-title">Tennis Trials</h2>
                 <div class="trial-details">
-                    <img src="placeholder-profile.jpg" alt="Coach Profile" class="coach-photo">
+                    <div class="coach-photo" style="background: #ccc;"></div>
                     <div class="info">
                         <p class="date">9 Sept</p>
                         <p class="time-place">8:00 PM - 9:00 PM</p>
@@ -50,7 +50,8 @@
         <button class="nav-item"><span class="icon">🏠</span>Home</button>
         <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
         <button class="nav-item active"><span class="icon">🏆</span>Events</button>
-        <button class="nav-item"><span class="icon">🔔</span>Announcements</button>
+        <button class="nav-item"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
     </nav>
     <script src="app.js"></script>
 </body>

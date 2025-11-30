@@ -16,7 +16,6 @@
     
     <main class="content-area centered-content">
         <div class="card confirmation-card payment-confirmation-card">
-            <!-- success-icon class is already in style.css -->
             <div class="success-icon">✓</div> 
             <h1 class="success-message">Payment successful!</h1>
             
@@ -24,16 +23,20 @@
             
             <div class="details-block">
                 <p>SHAH JEE</p>
+                <p>Transaction ID: 8372910</p>
                 <p>Meezan Bank Limited</p>
             </div>
+            
+             <button class="btn-action primary-action redirect-btn" id="backBtn" style="margin-top: 30px;" onclick="window.location.href='home.html'">Back to Home</button>
         </div>
     </main>
 
     <nav class="bottom-nav">
-        <button class="nav-item active"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
         <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
         <button class="nav-item"><span class="icon">🏆</span>Events</button>
-        <button class="nav-item"><span class="icon">🔔</span>Announcements</button>
+        <button class="nav-item"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
     </nav>
     <script src="app.js"></script>
 </body>

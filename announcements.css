@@ -1,87 +1,108 @@
-/* announcements.css - Styles for the Announcements/Notifications Page */
+/* announcements.css - Redesigned for Mobile Aesthetics */
 
 .announcements-card {
-    /* Large white empty space where notifications usually live */
-    flex-grow: 1;
-    min-height: 400px; 
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-.centered-content {
-    /* Ensuring content takes vertical space between top and bottom nav */
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-}
-
-.action-buttons {
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    gap: 40px; /* Space between Open and Clear */
-    width: 100%;
-    margin-top: 20px;
-}
-
-.action-buttons .btn-action {
-    width: 100px; /* Specific width for the small buttons */
-    padding: 10px 0;
-    font-size: 1rem;
-    /* Reusing secondary-action style from style.css (Grey) */
-}
-/* announcements.css ADDITIONS for list data */
-
-.announcements-card {
-    /* Ensure card is flexible to hold the list */
-    flex-grow: 1;
-    min-height: 400px; 
-    margin-bottom: 30px;
-    padding: 0; /* Removing padding from card to put it on list items */
-    overflow-y: auto;
+    background: transparent; /* Remove container background */
+    box-shadow: none;
+    padding: 0;
 }
 
 .announcement-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between notification cards */
 }
 
 .announcement-item {
     display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    border-bottom: 1px solid #eee;
-    font-size: 0.95rem;
-    color: #333;
+    align-items: flex-start; /* Align to top for multi-line text */
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px; /* Rounded corners like iOS widgets */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: transform 0.2s ease;
 }
 
-.announcement-item:last-child {
-    border-bottom: none;
+.announcement-item:active {
+    transform: scale(0.98);
 }
 
 .announcement-item.unread {
-    background-color: #fff9f6; /* Subtle background for unread items */
-    font-weight: bold;
+    background-color: #fff;
+    border-left: 4px solid #e6601e; /* Orange indicator line on left */
+}
+
+.announcement-item.unread .text {
+    font-weight: 600;
+    color: #000;
 }
 
 .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #e6601e; /* Orange dot color */
-    margin-right: 10px;
+    /* Replaced dot with the border-left style, so hiding this or using it for icons */
+    display: none; 
 }
 
-.announcement-item:not(.unread) .dot {
-    background-color: transparent; /* Read items don't show the dot */
+.icon-placeholder {
+    width: 36px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.announcement-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .text {
-    flex-grow: 1;
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.4;
 }
 
 .time {
-    font-size: 0.8rem;
-    color: #888;
-    margin-left: 10px;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.action-buttons {
+    position: fixed;
+    bottom: 90px; /* Above the bottom nav */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 90;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.action-buttons .btn-action {
+    width: auto;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    margin: 0;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #4b382d;
+    font-weight: 600;
+}
+
+.action-buttons .btn-action:first-child {
+    color: #e6601e; /* Highlight 'Mark Read' */
 }

@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname;
     const userIsCoach = false; 
 
-    // --- INJECT DRAWERS (MENU & PROFILE) ---
     function injectDrawers() {
         const drawersHTML = `
             <div id="menuBackdrop" class="overlay-backdrop"></div>
@@ -28,23 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
             <div id="profileDrawer" class="drawer drawer-right">
                  <div class="drawer-header">
                     <button id="closeProfileDrawer" class="drawer-back-btn" style="align-self: flex-end;">→</button>
-                    <h2 style="margin:0; font-size:1.5rem;">My Profile</h2>
+                    <div class="drawer-user-info" style="align-items: flex-end; width: 100%;">
+                        <div class="drawer-avatar" style="border: 2px solid white; margin-bottom: 5px;">S</div>
+                        <p class="drawer-email" style="font-weight: bold; margin: 0;">u2023xxxx@giki.edu.pk</p>
+                    </div>
                 </div>
-                <div class="drawer-nav">
-                    <div class="input-group">
-                        <label class="select-label" style="font-size:0.9rem;">Full Name</label>
-                        <input type="text" class="text-input" value="Student Name" readonly>
-                    </div>
-                    <div class="input-group">
-                        <label class="select-label" style="font-size:0.9rem;">Registration Number</label>
-                        <input type="text" class="text-input" value="2023xxxx" readonly>
-                    </div>
-                    <div class="input-group">
-                        <label class="select-label" style="font-size:0.9rem;">Department</label>
-                        <input type="text" class="text-input" value="Computer Science" readonly>
-                    </div>
-                    <button class="btn-action primary-action" style="margin-top:20px;">Edit Profile</button>
-                </div>
+                <nav class="drawer-nav">
+                    <a href="#" class="drawer-item">Edit Profile</a>
+                    <a href="#" class="drawer-item">Change Password</a>
+                    <a href="#" class="drawer-item">Notification Preferences</a>
+                    <a href="#" class="drawer-item">Privacy & Security</a>
+                    <a href="#" class="drawer-item">Linked Accounts</a>
+                    <a href="#" class="drawer-item">App Theme</a>
+                </nav>
             </div>
         `;
         document.body.insertAdjacentHTML('beforeend', drawersHTML);
