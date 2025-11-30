@@ -1,0 +1,69 @@
+/* menu.css - Styles for the standalone Menu page (Sidebar Prototype) */
+
+body {
+    /* Override base body style to allow the menu to cover part of the screen */
+    background-color: #f7f0e5; 
+    display: block; /* Ensure it doesn't force flex-column layout */
+}
+
+.menu-container {
+    width: 70%; /* Matches the visual width of the sidebar */
+    height: 100vh;
+    background-color: #fff; /* White background for the menu content */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header {
+    background-color: #694b39; /* Dark brown header color */
+    color: white;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.menu-subtitle {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.menu-nav {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.menu-item {
+    display: block;
+    color: #4b382d;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item.disabled {
+    color: #aaa;
+    cursor: default;
+}
+
+.close-menu-btn {
+    background: none;
+    border: none;
+    color: #4b382d;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    border-top: 1px solid #eee;
+}

@@ -1,0 +1,104 @@
+body {
+    background-color: #f7f0e5; /* Beige background */
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.welcome-title {
+    color: #4b382d;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    color: #4b382d;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f7e0d3; /* Lighter beige/peach for input fields */
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #e6601e; /* Orange sign-in button */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #cc541b;
+}
+
+.quick-login-divider {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.quick-login-divider hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.quick-login-divider p {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-top: -20px;
+    background-color: #f7f0e5;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.quick-login-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-quick-login {
+    background-color: #888; /* Grey buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-quick-login:hover {
+    background-color: #666;
+}

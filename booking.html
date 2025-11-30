@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - New Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn back-btn" id="backBtn">←</button>
+        <h2 class="app-name">GIKI Pulse</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area">
+        <div class="card booking-card">
+            <h2 class="select-label">Booking For</h2>
+            <div class="booking-type-toggle">
+                <div class="toggle-option active" id="optionPersonal">Personal</div>
+                <div class="toggle-option" id="optionSociety">Society/Team</div>
+            </div>
+
+            <div id="societyInputGroup" class="input-group hidden">
+                <h2 class="select-label">Society / Team Name</h2>
+                <input type="text" class="text-input" placeholder="e.g., ACM, Football Team">
+            </div>
+
+            <h2 class="select-label">Select Date & Time</h2>
+            <div class="selection-row">
+                <div class="selection-pill date-pill">Apr 1, 2025</div>
+                <div class="selection-pill time-pill">9:41 AM</div>
+            </div>
+            
+            <button class="btn-action primary-action" id="bookBtn">Confirm Booking</button>
+            <button class="btn-action secondary-action" id="saveDraftBtn">Save Draft</button>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item active"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

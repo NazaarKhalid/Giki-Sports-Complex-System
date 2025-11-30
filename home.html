@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn" id="openMenu">☰</button>
+        <h2 class="app-name">GIKI Pulse</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area">
+        <div class="attention-card">
+            <div class="attention-content">
+                <span class="icon">🔔</span>
+                <div>
+                    <p class="title">Attention Needed</p>
+                    <p class="subtitle">Gym Membership Expired</p>
+                </div>
+            </div>
+            <button class="renew-btn">Renew</button>
+        </div>
+
+        <h3>Quick Actions</h3>
+        <div class="quick-actions">
+            <button class="action-item"><span class="icon">📅</span>Book</button>
+            <button class="action-item"><span class="icon">💳</span>Pay Fee</button>
+            <button class="action-item"><span class="icon">🏆</span>Events</button>
+            <button class="action-item"><span class="icon">📈</span>Activity</button>
+        </div>
+
+        <div class="schedule-header">
+            <h3>Today's Schedule</h3>
+            <button class="view-all-btn">View All</button>
+        </div>
+        <div class="schedule-card">
+            <div class="color-indicator"></div>
+            <div class="schedule-details">
+                <p class="item-name">Squash Court A</p>
+                <p class="item-time">06:00 PM - 07:00 PM</p>
+            </div>
+            <span class="status-badge booked">Booked</span>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item active"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>

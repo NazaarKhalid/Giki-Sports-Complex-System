@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Booking Confirmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn back-btn" id="backBtn">←</button> 
+        <h2 class="app-name">GIKI Pulse</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area centered-content">
+        <div class="card confirmation-card">
+            <div class="success-icon">✓</div>
+            <h1 class="success-message">Booking Confirmed!</h1>
+            
+            <h2 class="item-focus">Squash Court A</h2>
+            
+            <div class="details-block">
+                <p>1 April</p>
+                <p>9:00 AM - 10:00 AM</p>
+                <p>Booking ID: 20250401</p>
+            </div>
+            
+            <button class="btn-action primary-action redirect-btn" id="viewBookingBtn">View in Schedule</button>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item active"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item"><span class="icon">🔔</span>Announcements</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

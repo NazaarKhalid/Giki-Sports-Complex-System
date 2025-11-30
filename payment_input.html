@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Card Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn back-btn" id="backBtn">←</button>
+        <h2 class="app-name">GIKI Pulse</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area">
+        <div class="card payment-card">
+            <h1 class="card-title">Card Details</h1>
+            
+            <div class="payment-icons">
+                <!-- Placeholder image URLs for VISA, Mastercard, Apple Pay logos -->
+                <img src="https://placehold.co/60x30/FFFFFF/2a2a2a?text=VISA" alt="Visa" class="payment-logo visa-logo">
+                <img src="https://placehold.co/60x30/FFFFFF/2a2a2a?text=M+CARD" alt="Mastercard" class="payment-logo mastercard-logo">
+                <img src="https://placehold.co/60x30/FFFFFF/2a2a2a?text=ApplePay" alt="Apple Pay" class="payment-logo apple-pay-logo">
+            </div>
+
+            <form id="paymentForm" class="payment-form">
+                <!-- Card Number Input (not shown in image but essential) -->
+                <input type="text" placeholder="Card Number" class="full-width-input" required>
+
+                <!-- Name Input -->
+                <input type="text" placeholder="Enter Name" class="full-width-input" required>
+
+                <div class="split-inputs">
+                    <!-- Expiry Input -->
+                    <input type="text" placeholder="Expiry" class="split-input" required>
+                    <!-- CVC Input -->
+                    <input type="text" placeholder="CVC" class="split-input" required>
+                </div>
+                
+                <button type="submit" class="btn-action primary-action" id="payBtn">Pay</button>
+                <button type="button" class="btn-action secondary-action" id="cancelBtn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item active"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item"><span class="icon">🔔</span>Announcements</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

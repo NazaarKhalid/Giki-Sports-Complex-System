@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Announcements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="announcements.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn" id="openMenu">☰</button>
+        <h2 class="app-name">GIKI Pulse</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area centered-content">
+        <div class="card announcements-card">
+            <ul class="announcement-list">
+                <li class="announcement-item unread">
+                    <span class="dot"></span>
+                    <span class="text">Football Field closed for maintenance.</span>
+                    <span class="time">10 min ago</span>
+                </li>
+                <li class="announcement-item">
+                    <span class="dot"></span>
+                    <span class="text">New squash court slots available!</span>
+                    <span class="time">1 hr ago</span>
+                </li>
+                <li class="announcement-item">
+                    <span class="dot"></span>
+                    <span class="text">Gym membership renewal reminder.</span>
+                    <span class="time">Yesterday</span>
+                </li>
+                <li class="announcement-item">
+                    <span class="dot"></span>
+                    <span class="text">Team tryouts schedule updated.</span>
+                    <span class="time">1 day ago</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn-action secondary-action" id="openNotificationBtn">Open</button>
+            <button class="btn-action secondary-action" id="clearNotificationBtn">Clear</button>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item active"><span class="icon">🔔</span>Announcements</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>
