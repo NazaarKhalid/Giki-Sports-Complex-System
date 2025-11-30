@@ -1,0 +1,35 @@
+/* team_management.css - Styles for the Team Management page */
+
+/* Adjusting the top bar for a center-aligned title */
+.top-bar .page-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4b382d;
+    margin: 0;
+}
+
+.team-management-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 120px); /* Adjust height to fit between top and bottom nav */
+}
+
+.team-roster {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    /* Placeholder for the large empty white box in the image */
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px; 
+}
+
+.action-buttons .btn-action {
+    width: 45%; /* Make buttons side-by-side */
+    margin: 0 5px;
+    /* Reusing secondary-action styles from style.css */
+}

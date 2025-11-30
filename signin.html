@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="welcome-title">Welcome Back</h1>
+            <p class="subtitle">Please sign in to continue.</p>
+        </header>
+        <main>
+            <form id="signInForm">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" id="email" value="u2023xxxx@gmail.com" required>
+
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" value="***********" required>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+
+            <div class="quick-login-divider">
+                <hr>
+                <p>PROTOTYPE QUICK LOGIN</p>
+            </div>
+
+            <div class="quick-login-buttons">
+                <button class="btn-quick-login student">Student</button>
+                <button class="btn-quick-login coach">Coach</button>
+                <button class="btn-quick-login rep">Society Rep</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

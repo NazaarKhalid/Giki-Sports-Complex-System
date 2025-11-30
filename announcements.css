@@ -1,0 +1,87 @@
+/* announcements.css - Styles for the Announcements/Notifications Page */
+
+.announcements-card {
+    /* Large white empty space where notifications usually live */
+    flex-grow: 1;
+    min-height: 400px; 
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.centered-content {
+    /* Ensuring content takes vertical space between top and bottom nav */
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 40px; /* Space between Open and Clear */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.action-buttons .btn-action {
+    width: 100px; /* Specific width for the small buttons */
+    padding: 10px 0;
+    font-size: 1rem;
+    /* Reusing secondary-action style from style.css (Grey) */
+}
+/* announcements.css ADDITIONS for list data */
+
+.announcements-card {
+    /* Ensure card is flexible to hold the list */
+    flex-grow: 1;
+    min-height: 400px; 
+    margin-bottom: 30px;
+    padding: 0; /* Removing padding from card to put it on list items */
+    overflow-y: auto;
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.announcement-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-item.unread {
+    background-color: #fff9f6; /* Subtle background for unread items */
+    font-weight: bold;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #e6601e; /* Orange dot color */
+    margin-right: 10px;
+}
+
+.announcement-item:not(.unread) .dot {
+    background-color: transparent; /* Read items don't show the dot */
+}
+
+.text {
+    flex-grow: 1;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 10px;
+}

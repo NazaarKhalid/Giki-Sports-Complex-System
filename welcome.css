@@ -1,0 +1,54 @@
+body {
+    background-color: #f7f0e5; /* Beige background from image */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Typical phone width */
+    padding: 20px;
+}
+
+.app-title {
+    font-family: serif; /* Using a placeholder font */
+    font-size: 3.5rem;
+    color: #8B4513; /* Brown color */
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: #5d4037;
+    margin-bottom: 50px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background-color: #8B4513; /* Dark brown button */
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #6d350f;
+}

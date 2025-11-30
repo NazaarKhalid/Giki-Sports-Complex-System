@@ -1,0 +1,48 @@
+/* activity.css - Styles specific to the My Activity page */
+
+/* General page title style */
+.page-title {
+    color: #4b382d;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Reusing general card style from home.css concept */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    color: #8B4513; /* Brown text for card headings */
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.booking-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #333;
+}
+
+.booking-item:last-child {
+    border-bottom: none;
+}
+
+.item-date {
+    color: #888;
+}

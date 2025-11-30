@@ -1,0 +1,201 @@
+/* style.css - Consolidated general styles */
+body {
+    background-color: #f7f0e5; /* Beige background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-area {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Card Style (used in Activity, Events, Booking, Confirmation) */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Top Bar (Reused) --- */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.app-name {
+    font-family: serif;
+    font-size: 1.5rem;
+    color: #8B4513;
+    margin: 0;
+}
+
+.user-profile {
+    width: 30px;
+    height: 30px;
+    background-color: #c9a489;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* --- Bottom Nav (Reused) --- */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #e6601e; /* Orange active color */
+}
+
+.nav-item .icon {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+/* Confirmation/Success Page Styles */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirmation-card {
+    max-width: 300px;
+    padding: 40px 20px;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #6aa84f; /* Green checkmark */
+    border: 3px solid #6aa84f;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.item-focus {
+    font-size: 1.5rem;
+    color: #4b382d;
+    margin-bottom: 15px;
+}
+
+.details-block p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Booking Page Styles */
+.select-label {
+    color: #4b382d;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.selection-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.selection-pill {
+    background-color: #eee;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #4b382d;
+    cursor: pointer;
+}
+
+.btn-action {
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.primary-action {
+    background-color: #e6601e; /* Orange */
+    color: white;
+}
+
+.secondary-action {
+    background-color: #888; /* Grey */
+    color: white;
+}
+
+/* style.css ADDITIONS */
+
+/* Back Button (shared across several pages) */
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Adjusting Top Bar for pages with Back Button */
+.top-bar {
+    /* Ensure the top bar starts the content when a back button is present */
+    justify-content: space-between; /* Ensure default spacing */
+}
+
+/* General Layout for Pages with a centered title and back button */
+.top-bar .page-title {
+    flex-grow: 1;
+    text-align: center;
+    /* If the title isn't centered, you might need to adjust the specific page's CSS */
+}

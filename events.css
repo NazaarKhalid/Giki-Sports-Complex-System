@@ -1,0 +1,82 @@
+/* events.css - Styles specific to the Events/Trials List page */
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.top-bar {
+    /* Adjusting layout for the back button */
+    justify-content: flex-start;
+}
+
+.app-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.trial-card {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 15px;
+    overflow: hidden; /* Ensure Apply button stays inside */
+}
+
+.trial-title {
+    color: #4b382d;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.trial-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.coach-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    /* This is a placeholder for the user's image */
+    background-color: #f0f0f0; 
+}
+
+.info {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.3;
+}
+
+.info p {
+    margin: 0;
+}
+
+.date {
+    font-weight: bold;
+    color: #333;
+}
+
+.apply-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background-color: #888; /* Grey button */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.apply-btn:hover {
+    background-color: #666;
+}
