@@ -16,28 +16,48 @@
     
     <main class="content-area">
         <!-- STATE 1: Not Registered (Default) -->
-        <div id="unregisteredState" class="card centered-content">
-            <div class="empty-state-icon">🔒</div>
-            <h2 class="item-focus">Access Restricted</h2>
-            <p class="empty-state-text">
-                This area is for registered Team Captains and Coaches only.
-            </p>
-            <button class="btn-action primary-action" id="requestAccessBtn">Request Access</button>
+        <div id="unregisteredState" class="centered-content" style="min-height: 60vh; justify-content: center;">
+            <div class="card" style="width: 100%; text-align: center; padding: 40px 20px;">
+                <div class="empty-state-icon">🔒</div>
+                <h2 class="item-focus">Access Restricted</h2>
+                <p class="empty-state-text">
+                    This area is for registered Team Captains and Coaches only.
+                </p>
+                <button class="btn-action primary-action" id="requestAccessBtn">Request Access</button>
+                
+                <!-- PROTOTYPE ONLY: Preview Button -->
+                <button id="previewCoachBtn" style="background: none; border: none; text-decoration: underline; color: #888; margin-top: 20px; cursor: pointer; font-size: 0.8rem;">
+                    (Prototype) Preview Coach View
+                </button>
+            </div>
         </div>
 
         <!-- STATE 2: Registered Coach/Captain (Hidden by default) -->
         <div id="coachState" class="hidden">
             <h2 class="select-label">Squash Team Roster</h2>
             <div class="card team-roster">
-                <p style="color:#888; text-align:center; padding: 20px;">No members added yet.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 30px; height: 30px; background: #ddd; border-radius: 50%; margin-right: 10px;"></div>
+                        <span>Ali Khan</span>
+                    </div>
+                    <span style="color: #6aa84f; font-size: 0.8rem; font-weight: bold;">Active</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 30px; height: 30px; background: #ddd; border-radius: 50%; margin-right: 10px;"></div>
+                        <span>Osman Ahmed</span>
+                    </div>
+                    <span style="color: #6aa84f; font-size: 0.8rem; font-weight: bold;">Active</span>
+                </div>
             </div>
 
-            <div class="action-buttons">
-                <button class="btn-action secondary-action" id="addMemberBtn">Add Member</button>
-                <button class="btn-action secondary-action" id="saveTeamBtn">Save Roster</button>
+            <div class="action-buttons" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <button class="btn-action secondary-action" id="addMemberBtn" style="flex: 1; margin: 0;">Add Member</button>
+                <button class="btn-action secondary-action" id="saveTeamBtn" style="flex: 1; margin: 0;">Save Roster</button>
             </div>
             
-            <button class="btn-action primary-action" style="margin-top:20px;">Create New Trial</button>
+            <button class="btn-action primary-action">Create New Trial</button>
         </div>
     </main>
 

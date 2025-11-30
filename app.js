@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const unregisteredState = document.getElementById('unregisteredState');
         const coachState = document.getElementById('coachState');
 
+        // Logic to show/hide based on flag
         if (userIsCoach) {
             unregisteredState.classList.add('hidden');
             coachState.classList.remove('hidden');
@@ -185,6 +186,12 @@ document.addEventListener('DOMContentLoaded', function() {
             unregisteredState.classList.remove('hidden');
             coachState.classList.add('hidden');
         }
+
+        // TOGGLE BUTTON LOGIC
+        document.getElementById('previewCoachBtn')?.addEventListener('click', function() {
+            unregisteredState.classList.add('hidden');
+            coachState.classList.remove('hidden');
+        });
 
         document.getElementById('requestAccessBtn')?.addEventListener('click', function() {
             this.textContent = "Request Pending...";
